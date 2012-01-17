@@ -1,1 +1,14 @@
-<%= @user.name %>, <%= @user.email %>
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= avatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @user.name %><br />
+      <strong>Email</strong>  <%= @user.email %>
+    </td>
+  </tr>
+</table>
